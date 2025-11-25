@@ -1,0 +1,117 @@
+[36m
+╔═══════════════════════════════════════════════════════════════╗
+║     INCHROSIL COMPRESSION SIZE DEMONSTRATION                  ║
+║     Raspberry Pi 5 Hardware-Optimized Encoding                ║
+╚═══════════════════════════════════════════════════════════════╝[0m
+[36m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[33mTest: [0mBacterial Gene Fragment (1KB)
+[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+
+[34m  ASCII Format (1 byte/nt):            [0m        1024 bytes
+[34m  FASTA Format (with headers):         [0m        1088 bytes
+[32m  Inchrosil 2-bit encoding:            [0m         288 bytes  ([35m71.9% smaller[0m)
+[32m  + Complementary deduplication:       [0m         161 bytes  ([35m84.3% smaller[0m)
+[32m  + Hole pattern compression:          [0m         161 bytes  ([35m84.3% smaller[0m)
+
+[33m  Compression Ratios:[0m
+    2-bit:                              3.56:1
+    2-bit + complementary:              6.36:1
+    Full Inchrosil (with holes):        6.36:1
+[36m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[33mTest: [0mSmall Viral Genome (10KB)
+[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+
+[34m  ASCII Format (1 byte/nt):            [0m       10240 bytes
+[34m  FASTA Format (with headers):         [0m       10420 bytes
+[32m  Inchrosil 2-bit encoding:            [0m        2592 bytes  ([35m74.7% smaller[0m)
+[32m  + Complementary deduplication:       [0m        1313 bytes  ([35m87.2% smaller[0m)
+[32m  + Hole pattern compression:          [0m        2593 bytes  ([35m74.7% smaller[0m)
+
+[33m  Compression Ratios:[0m
+    2-bit:                              3.95:1
+    2-bit + complementary:              7.80:1
+    Full Inchrosil (with holes):        3.95:1
+[36m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[33mTest: [0mBacterial Chromosome Fragment (100KB)
+[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+
+[34m  ASCII Format (1 byte/nt):            [0m      102400 bytes
+[34m  FASTA Format (with headers):         [0m      103732 bytes
+[32m  Inchrosil 2-bit encoding:            [0m       25632 bytes  ([35m75.0% smaller[0m)
+[32m  + Complementary deduplication:       [0m       12833 bytes  ([35m87.5% smaller[0m)
+[32m  + Hole pattern compression:          [0m       12833 bytes  ([35m87.5% smaller[0m)
+
+[33m  Compression Ratios:[0m
+    2-bit:                              4.00:1
+    2-bit + complementary:              7.98:1
+    Full Inchrosil (with holes):        7.98:1
+[36m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[33mTest: [0mEukaryotic Chromosome (1MB)
+[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+
+[34m  ASCII Format (1 byte/nt):            [0m     1048576 bytes
+[34m  FASTA Format (with headers):         [0m     1061735 bytes
+[32m  Inchrosil 2-bit encoding:            [0m      262176 bytes  ([35m75.0% smaller[0m)
+[32m  + Complementary deduplication:       [0m      131105 bytes  ([35m87.5% smaller[0m)
+[32m  + Hole pattern compression:          [0m      262177 bytes  ([35m75.0% smaller[0m)
+
+[33m  Compression Ratios:[0m
+    2-bit:                              4.00:1
+    2-bit + complementary:              8.00:1
+    Full Inchrosil (with holes):        4.00:1
+[36m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[33mTest: [0mHuman Genome Scale (3 billion bases)
+[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+
+[34m  ASCII Format (1 byte/nt):            [0m  3000000000 bytes
+[34m  FASTA Format (with headers):         [0m  3037500052 bytes
+[32m  Inchrosil 2-bit encoding:            [0m   750000032 bytes  ([35m75.0% smaller[0m)
+[32m  + Complementary deduplication:       [0m   375000033 bytes  ([35m87.5% smaller[0m)
+[32m  + Hole pattern compression:          [0m   750000033 bytes  ([35m75.0% smaller[0m)
+
+[33m  Compression Ratios:[0m
+    2-bit:                              4.00:1
+    2-bit + complementary:              8.00:1
+    Full Inchrosil (with holes):        4.00:1
+[36m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[33mSUMMARY - TOTAL SPACE SAVINGS[0m
+[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+
+[34m  Total ASCII storage needed:          [0m     3001162240 bytes  (2.80 GB)
+[34m  Total FASTA storage needed:          [0m     3038677027 bytes  (2.83 GB)
+[32m  Total Inchrosil storage needed:      [0m      750277797 bytes  (0.70 GB)
+
+[35m  Space saved vs ASCII:                [0m     2250884443 bytes  (75.0%)
+[35m  Overall compression ratio:           [0m4.00:1
+[36m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[33mINCHROSIL ENCODING ADVANTAGES[0m
+[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+
+  ✓ [32m2-bit encoding[0m              4× smaller than ASCII (A/T/C/G)
+  ✓ [32mComplementary deduplication[0m  2× savings (Watson-Crick pairing)
+  ✓ [32mHole pattern compression[0m     Efficient missing nucleotide tracking
+  ✓ [32mHardware acceleration[0m        ARM NEON + CRC32 on Raspberry Pi 5
+  ✓ [32mParallel processing[0m         4-core Cortex-A76 @ 2.4 GHz
+  ✓ [32mNVMe optimized I/O[0m          256KB block size for 117GB storage
+[36m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[33mREAL-WORLD EXAMPLE: Human Genome[0m
+[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+
+  Traditional storage (ASCII):         2.79 GB
+  Inchrosil compressed:                0.70 GB
+  Space saved:                         2.10 GB  (75.0%)
+
+  [32m→ Can store ~12 human genomes on Raspberry Pi 5 (117GB NVMe)[0m
+[36m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+
+[32m✓ Compression size analysis completed!
+[0m
